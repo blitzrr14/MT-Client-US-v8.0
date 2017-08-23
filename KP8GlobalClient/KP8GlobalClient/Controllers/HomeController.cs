@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+using KP8GlobalClient.Models;
+
+namespace KP8GlobalClient.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Home()
+        {
+            //LoginModel Login = new LoginModel { FName = this.Session["User"].ToString(),
+            //                                    Branch = this.Session["Bracnh"].ToString(),
+            //                                    Role = this.Session["Role"].ToString(),
+            //                                    Server = this.Session["Server"].ToString()
+            //                                  };
+            return PartialView(new LoginModel { FName = this.Session["User"].ToString(),
+                                                Branch = this.Session["Bracnh"].ToString(),
+                                                Role = this.Session["Role"].ToString(),
+                                                Server = this.Session["Server"].ToString()
+                                              });
+        }
+
+        public ActionResult HomeHeaderBar()
+        {
+            return PartialView();
+        }
+
+        public ActionResult HomeFooterBar()
+        {
+            return PartialView();
+        }
+	}
+}

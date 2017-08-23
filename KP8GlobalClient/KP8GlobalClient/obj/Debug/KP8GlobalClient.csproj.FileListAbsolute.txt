@@ -1,0 +1,108 @@
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll.config
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.pdb
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\WebGrease.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.pdb
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Owin.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\bin\MySql.Data.dll
+C:\Users\TULA16096675\Desktop\Office Projects\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll.config
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.pdb
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\MySql.Data.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Owin.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\WebGrease.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.xml
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.pdb
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
+C:\Users\TULA16096675\Desktop\My Pending Projects\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll.config
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.pdb
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\MySql.Data.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Owin.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
+C:\Users\Administrator\Desktop\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb
