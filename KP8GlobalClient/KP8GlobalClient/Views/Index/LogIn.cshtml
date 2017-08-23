@@ -9,44 +9,42 @@
     </div>
     
     <div style="box-shadow: 6px 0px 0px 0px #000; -moz-border-radius: 90px 90px 0 0; -webkit-border-radius: 90px 90px 0 0; -ms-border-radius: 90px 90px 0 0;
-                background: rgba(0,0,0,0.7); width: 100%; border-radius: 15px; padding: 50px 0 20px 0;">
-        <div id="LoginForm">
-            <span class="formLoginLabel">
-                USER AUTHENTICATION
-            </span>
+                background: rgba(0,0,0,0.7); width: 100%; border-radius: 15px; padding: 50px 0 10px 0;">
+        <span class="formLoginLabel">
+            USER AUTHENTICATION
+        </span>
 
-            @using (Html.BeginForm("LogIn", "Login", FormMethod.Post, new { @class = "formLogin", @id = "Login" }))
-            {
-                @Html.AntiForgeryToken()
-                <div class="input-group" style="width: 100%;">
-                    <div class="input-group-addon form-group"><span class="glyphicon glyphicon-user icon-a"></span></div>
-                    @Html.TextBoxFor(m => m.Username, new { @class = "form-control form-controlFor", @placeholder = "Username", @autofocus = "autofocus", @style = "text-transform:uppercase;" })
-                </div>
-                @Html.ValidationMessageFor(m => m.Username)
-                <div class="input-group" style="width: 100%; position: relative;">
-                    <div class=" input-group-addon form-group"><span class="glyphicon glyphicon-lock icon-a"></span></div>
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control form-controlFor", @placeholder = "Password", style = "padding-right: 30px;" })
-                    <span class="glyphicon glyphicon-eye-open fadeOn" id="glyphEye" title="View Password"></span>
-                </div>
-                @Html.ValidationMessageFor(m => m.Password)
-
-                <div class="input-group" style="width: 100%;">
-                    <button type="submit" id="btnLogin">
-                        <span class="glyphicon glyphicon-log-in"></span> Login
-                    </button>
-                </div>
-            }
-
-            <div style="color: #F94a48; height: 20px;">
-                <span style="line-height: 20px;">
-                    @if (Model != null)
-                    {
-                        if (Model.ErrorMessage != null)
-                        { @Model.ErrorMessage }
-                    }
-                </span>
+        @using (Html.BeginForm("LogIn", "Login", FormMethod.Post, new { @class = "formLogin", @id = "Login" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="input-group" style="width: 100%;">
+                <div class="input-group-addon form-group"><span class="glyphicon glyphicon-user icon-a"></span></div>
+                @Html.TextBoxFor(m => m.Username, new { @class = "form-control form-controlFor", @placeholder = "Username", @autofocus = "autofocus", @style = "text-transform:uppercase;" })
             </div>
-        </div>
+            @Html.ValidationMessageFor(m => m.Username)
+            <div class="input-group" style="width: 100%; position: relative;">
+                <div class=" input-group-addon form-group"><span class="glyphicon glyphicon-lock icon-a"></span></div>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control form-controlFor", @placeholder = "Password", style = "padding-right: 30px;" })
+                <span class="glyphicon glyphicon-eye-open fadeOn" id="glyphEye" title="View Password"></span>
+            </div>
+            @Html.ValidationMessageFor(m => m.Password)
+
+            <div class="input-group" style="width: 100%;">
+                <button type="submit" class="btnDefault" style="width: 100%;">
+                    <span class="glyphicon glyphicon-log-in"></span> Login
+                </button>
+            </div>
+        }
+
+        @*<div style="color: #F94a48; height: 20px;">
+            <span style="line-height: 20px;">
+                @if (Model != null)
+                {
+                    if (Model.ErrorMessage != null)
+                    { @Model.ErrorMessage }
+                }
+            </span>
+        </div>*@
     </div> 
 </div>
 

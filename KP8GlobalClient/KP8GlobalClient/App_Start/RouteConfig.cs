@@ -14,11 +14,11 @@ namespace KP8GlobalClient
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(name: "Index", url: "",
-                            defaults: new { controller = "Index", action = "Index", id = UrlParameter.Optional }
+                            defaults: new { controller = "Index", action = "LogIn", id = UrlParameter.Optional }
                            );
 
             routes.MapRoute(name: "Default", url: "{controller}/{action}/{id}",
-                            defaults: new { controller = "Index", action = "Index", id = UrlParameter.Optional }
+                            defaults: new { controller = "Index", action = "LogIn", id = UrlParameter.Optional }
                            );
         }
     }

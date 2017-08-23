@@ -13,12 +13,12 @@ namespace KP8GlobalClient.Controllers
     public class IndexController : Controller
     {
         [HttpGet]
-        public ActionResult Index() 
+        public ActionResult LogIn() 
         {
             if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP"))
                 return RedirectToAction("Home", "Home");
             else
-                return PartialView("Login");
+                return View();
         }
 
         [ValidateAntiForgeryToken]

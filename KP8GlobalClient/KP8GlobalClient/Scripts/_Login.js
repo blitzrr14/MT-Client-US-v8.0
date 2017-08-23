@@ -1,7 +1,7 @@
 ﻿$(function () {
     $('form#Login').on("submit", function (e) {
         e.preventDefault();
-        setModalLoader();
+        ajaxLoadModal('Authenticating...');
         
         setTimeout(function () {
             $.ajax({
@@ -14,13 +14,13 @@
                 cache: false,
                 success: function (result) {
                     $('div#content-holder').html(result);
-                    setModalLoader();
+                    ajaxLoadModal();
                 },
-                error: function (errMsg) {
-                    setModalLoader();
+                error: function (jqXHR, textStatus, errorThrown) {
+                    unExpectedError();
                 }
             });
-        }, 1000);        
+        }, 1000);
     });
 
     $('#Password').on("keyup", function () {
