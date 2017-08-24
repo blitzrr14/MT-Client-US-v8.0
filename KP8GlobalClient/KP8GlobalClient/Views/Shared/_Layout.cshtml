@@ -9,15 +9,10 @@
     @Scripts.Render("~/bundles/jquery")
     @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
-<body style="background: url('../Image/Sinulog2.jpg') no-repeat fixed #1f0f0f; background-size: cover;">    
+<body>    
     <header>
-        <nav id="HeaderMenu" class="" style="text-align: center; color: #AAA; line-height: 50px;">
-            @if (ViewBag.Title != "Login")
-            {
-                <div>
-                    Home | Sendout | Payout | Reports | KP2Go | BillsPayment | System
-                </div>    
-            }
+        <nav>
+            @if (ViewBag.Title != "Login") { Html.RenderPartial("_HeaderLinks"); }
         </nav>
     </header>
 
@@ -35,25 +30,22 @@
         </nav>
     </footer>    
     
-    <div id="ajxload" class="ajxLoadOff"
-         style="background-color: rgba(0,0,0,0.6); height: 100%; width: 100%; position: fixed; top: 0px;">
-        <div id="ajaxified-svg-image"
-             style="position: absolute; width: 300px; height: 75px; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <div id="uiBlocker" class="fadeOut">
+        <div class="uiBlocker-content">
             <img id="MLLogo-Diamond" src="~/Image/_MLAjaxLoad.svg" draggable="false" />
             <img id="MLLogo-Ajax-Circle" src="~/Image/_CircleAjaxLoad.svg" draggable="false" />
-            <div id="ajxMsg"
-                 style="text-align: center; user-select: none; position: absolute; bottom: 0px; left: 51%; transform: translateX(-50%); color: white; font-size: 13px;">
+            <div id="ajxMsg">
                 Please Wait...
             </div>
         </div>
     </div>
 
-    <div id="msgModal" class="hidden" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; z-index: 2001;">
-        <div class="col-md-12" style="background: red; font-size: 18px; color: white; border-top-left-radius: 8px; border-top-right-radius: 8px; padding: 5px; border: 1px solid red;">
+    <div id="msgModal" class="hidden">
+        <div class="col-md-12 msgModal-header">
             Message
         </div>
-        <div class="col-md-12" style="background: white; border-bottom: 2px solid red; border-right: 1px solid red; border-left: 1px solid red; padding: 10px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
-            <div id="msgContainer" class="col-md-12" style="text-align: center; margin: 5px;">Please Wait...</div>
+        <div class="col-md-12 msgModal-content">
+            <div id="msgContainer" class="col-md-12">Please Wait...</div>
             <br />
             <center>
                 <button onclick="hideModals()" class="btnDefault">- OK -</button>

@@ -1,24 +1,23 @@
 ﻿$(function () {    
-    $('#MLFSI').removeClass('fadeOn');
-    $('#MLFSI').addClass('fadeOff');
+    //equivalent to document.ready
 });
 
 function ajaxLoadModal(msg) {
     if (typeof msg != 'string') {
-        if ($('#ajxload').hasClass('ajxLoadOff')) {
-            $('#ajxload').removeClass('ajxLoadOff');
-            $('#ajxload').addClass('ajxLoadOn');
+        if ($('#uiBlocker').hasClass('fadeIn')) {
+            $('#uiBlocker').removeClass('fadeIn');
+            $('#uiBlocker').addClass('fadeOut');
         }
         else {
-            $('#ajxload').removeClass('ajxLoadOn');
-            $('#ajxload').addClass('ajxLoadOff');
+            $('#uiBlocker').removeClass('fadeOut');
+            $('#uiBlocker').addClass('fadeIn');
         }
     }
     else {
         document.getElementById("ajxMsg").innerHTML = (msg == "" ? "Please Wait..." : (msg + '...'));
-        if ($('#ajxload').hasClass('ajxLoadOff')) {
-            $('#ajxload').removeClass('ajxLoadOff');
-            $('#ajxload').addClass('ajxLoadOn');
+        if ($('#uiBlocker').hasClass('fadeOut')) {
+            $('#uiBlocker').removeClass('fadeOut');
+            $('#uiBlocker').addClass('fadeIn');
         }
     }
 }

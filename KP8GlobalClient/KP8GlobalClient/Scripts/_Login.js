@@ -25,12 +25,12 @@
 
     $('#Password').on("keyup", function () {
         if ($(this).val()) {
-            $('#glyphEye').removeClass('fadeOn');
-            $('#glyphEye').addClass('fadeOff');
+            $('#glyphEye').removeClass('fadeOut');
+            $('#glyphEye').addClass('fadeIn');
         }
         else {
-            $('#glyphEye').removeClass('fadeOff');
-            $('#glyphEye').addClass('fadeOn');
+            $('#glyphEye').removeClass('fadeIn');
+            $('#glyphEye').addClass('fadeOut');
         }
     });
 

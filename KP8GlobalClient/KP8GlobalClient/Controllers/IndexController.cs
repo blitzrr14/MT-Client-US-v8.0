@@ -24,12 +24,11 @@ namespace KP8GlobalClient.Controllers
         [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult LogIn(LoginModel Login)
-        { 
+        {
+            if (!ModelState.IsValid)
+                return PartialView(Login);
             try
             {
-                if (!ModelState.IsValid)
-                    return PartialView(Login); 
-
                 var UserData = new LoginModel();
                 var getInfo = new UserAdminLogin().getUserLogin();
 
@@ -47,6 +46,7 @@ namespace KP8GlobalClient.Controllers
                     this.Session["Server"] = getInfo.Server;
                     Request.GetOwinContext().Authentication.SignIn(userLogged);
                     return RedirectToAction("Home", "Home", getInfo);
+                    
                 }
                 else
                 {
@@ -56,9 +56,8 @@ namespace KP8GlobalClient.Controllers
             }
             catch (Exception)
             {
-
+                return PartialView(Login);
             }
-            return PartialView();
         }
 
         [HttpGet]

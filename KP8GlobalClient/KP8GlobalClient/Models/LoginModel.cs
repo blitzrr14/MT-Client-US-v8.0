@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 using MySql.Data.MySqlClient;
 using System.ComponentModel.DataAnnotations;
@@ -10,6 +11,7 @@ namespace KP8GlobalClient.Models
 {
     public class LoginModel
     {
+        [RegularExpression("^[a-zA-Z0-9_.-]*$", ErrorMessage = "Invalid username...")]
         [Required(ErrorMessage = "Username is required")]
         [Display(Name = "Username")]
         public String Username { get; set; }
