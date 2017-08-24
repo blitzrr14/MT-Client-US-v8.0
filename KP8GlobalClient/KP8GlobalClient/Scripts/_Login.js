@@ -1,27 +1,27 @@
 ﻿$(function () {
-    $('form#Login').on("submit", function (e) {
-        e.preventDefault();
-        ajaxLoadModal('Authenticating...');
+    //$('form#Login').on("submit", function (e) {
+    //    e.preventDefault();
+    //    ajaxLoadModal('Authenticating...');
         
-        setTimeout(function () {
-            $.ajax({
-                async: true,
-                type: 'POST',
-                url: '/Index/LogIn',
-                data: $('form :input').serializeArray(),
-                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-                dataType: 'html',
-                cache: false,
-                success: function (result) {
-                    $('div#content-holder').html(result);
-                    ajaxLoadModal();
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    unExpectedError();
-                }
-            });
-        }, 1000);
-    });
+    //    setTimeout(function () {
+    //        $.ajax({
+    //            async: true,
+    //            type: 'POST',
+    //            url: '/Index/LogIn',
+    //            data: $('form :input').serializeArray(),
+    //            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+    //            dataType: 'html',
+    //            cache: false,
+    //            success: function (result) {
+    //                //$('div#content-holder').html(result);
+    //                //ajaxLoadModal();
+    //            },
+    //            error: function (jqXHR, textStatus, errorThrown) {
+    //                unExpectedError();
+    //            }
+    //        });
+    //    }, 1000);
+    //});
 
     $('#Password').on("keyup", function () {
         if ($(this).val()) {

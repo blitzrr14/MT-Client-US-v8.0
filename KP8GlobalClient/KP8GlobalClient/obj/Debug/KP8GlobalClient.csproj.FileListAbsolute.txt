@@ -142,3 +142,39 @@ D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.
 D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
 D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
 D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll.config
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.pdb
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Web.Infrastructure.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\MySql.Data.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Owin.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\WebGrease.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.xml
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.pdb
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb

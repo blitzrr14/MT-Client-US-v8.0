@@ -15,7 +15,7 @@ namespace KP8GlobalClient.Controllers
         [HttpGet]
         public ActionResult LogIn() 
         {
-            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP"))
+            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
                 return RedirectToAction("Home", "Home");
             else
                 return View();
@@ -45,7 +45,7 @@ namespace KP8GlobalClient.Controllers
                     this.Session["Role"] = getInfo.Role;
                     this.Session["Server"] = getInfo.Server;
                     Request.GetOwinContext().Authentication.SignIn(userLogged);
-                    return RedirectToAction("Home", "Home", getInfo);
+                    return RedirectToAction("Index", "Sendout");
                     
                 }
                 else

@@ -25,6 +25,7 @@ namespace KP8GlobalClient
                       "~/Content/bootstrap.css",
                       //"~/Content/font-awesome.css",
                       "~/Content/_SVGImageLoad.css",
+                      "~/Content/Sendout.css",
                       "~/Content/Site.css"));
         }
     }

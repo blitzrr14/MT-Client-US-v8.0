@@ -1,0 +1,29 @@
+﻿.main-form{
+    height: 510px;
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
+    width: 90%;
+    margin-left: 5%;
+}
+
+#transact-form {
+    height: 400px;
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
+    width: 65%;
+    margin-left: 2%;
+}
+
+#summary-form {
+    height: 470px;
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
+    width: 30%;
+    margin-left: 2%;
+}

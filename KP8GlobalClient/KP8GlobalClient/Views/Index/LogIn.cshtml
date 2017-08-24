@@ -14,7 +14,7 @@
             USER AUTHENTICATION
         </span>
 
-        @using (Html.BeginForm("LogIn", "Login", FormMethod.Post, new { @class = "formLogin", @id = "Login" }))
+        @using (Html.BeginForm("LogIn", "Index", FormMethod.Post, new { @class = "formLogin", @id = "Login" }))
         {
             @Html.AntiForgeryToken()
             <div class="input-group" style="width: 100%;">

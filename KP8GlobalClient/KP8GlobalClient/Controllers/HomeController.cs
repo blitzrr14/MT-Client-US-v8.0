@@ -17,12 +17,19 @@ namespace KP8GlobalClient.Controllers
             //                                    Role = this.Session["Role"].ToString(),
             //                                    Server = this.Session["Server"].ToString()
             //                                  };
+            if (this.Session["User"] == null)
+            {
+                return RedirectToAction("LogIn", "Index");
+            }
+            else { 
             return PartialView(new LoginModel { FName = this.Session["User"].ToString(),
                                                 Branch = this.Session["Bracnh"].ToString(),
                                                 Role = this.Session["Role"].ToString(),
                                                 Server = this.Session["Server"].ToString()
                                               });
+            }
         }
+
 
         public ActionResult HomeHeaderBar()
         {

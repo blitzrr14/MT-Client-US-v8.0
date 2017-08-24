@@ -153,6 +153,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\Sendout.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\_SVGImageLoad.css" />
     <Content Include="favicon.ico" />
@@ -196,14 +197,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Content Include="Views\Shared\_HeaderLinks.cshtml" />
-=======
-    <Content Include="Views\Sendout\Sendout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Sendout\Index.cshtml" />
->>>>>>> 77865478556c7889a19c8d9552956122ec1f9620
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
