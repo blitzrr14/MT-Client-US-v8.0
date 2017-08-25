@@ -1,12 +1,185 @@
-﻿
+﻿@model KP8GlobalClient.Models.SendoutModel
+
 @{
     ViewBag.Title = "Index";
 }
 
 
-<div class="main-form">
+<div class="main-form" style="position:fixed">
 
-    <div class="col-md-6" id="transact-form"></div>
+    <div class="col-md-6" id="transact-form">
+        <div class="col-md-12" id="branchinformation"></div>
+        <div class="col-md-12" id="maininformation">
+            <ul>
+              
+                <li><a class="active" href="#news">Sender Information</a></li>
+                <li><a href="#contact">Receiver Information</a></li>
+                <li><a href="#about">Amount Information</a></li>
+            </ul>
+            <div id="senderInformation">
+                <div>
+
+                </div>
+                <div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>First name<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.firstName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>Middle name<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.middleName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>Last name<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.lastName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-6">
+                        <div class="tex"></div>
+                        <label>Street<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.firstName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tex"></div>
+                        <label>Country<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.middleName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tex"></div>
+                        <label>Province/State<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.lastName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>Birth Date<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.firstName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>Gender<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.middleName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>Contact No<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.lastName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>ID Type<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.firstName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>ID No.<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.middleName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tex"></div>
+                        <label>Expiry Date<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.lastName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-6">
+                        <div class="tex"></div>
+                        <label>Soruce of Fund<span style="color:red;">*</span></label>
+                        @Html.TextBoxFor(model => model.firstName, new
+                                {
+                                    @class = "form-control",
+                                    @maxlength = "50",
+                                    @autofocus = "",
+                                    @required = "required"
+                                })
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
     <div class="col-md-6" id="summary-form"></div>
 
 </div>

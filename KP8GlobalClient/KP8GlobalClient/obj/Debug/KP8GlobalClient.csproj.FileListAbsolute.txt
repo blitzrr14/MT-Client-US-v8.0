@@ -195,3 +195,4 @@ D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.pdb
 D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\bin\EntityFramework.xml
 D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
 D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb
+D:\WORK\Git\KP8\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache

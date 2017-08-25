@@ -1,6 +1,6 @@
 ﻿.main-form{
     height: 510px;
-    background: #ffffff;
+    background: rgba(53, 32, 32, 0.76);
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
@@ -16,6 +16,7 @@
     box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
     width: 65%;
     margin-left: 2%;
+    padding:0px;
 }
 
 #summary-form {
@@ -26,4 +27,72 @@
     box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
     width: 30%;
     margin-left: 2%;
+}
+
+.main-form ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+   
+}
+
+.main-form li {
+    float: left;
+}
+
+.main-form li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.main-form li a:hover:not(.active) {
+    background-color: #ff0000;
+    color:white;
+  
+}
+
+
+.active {
+    background-color: #ffffff;
+    color:black !important;
+    
+}
+
+
+#branchinformation {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
+    height: 82px;
+}
+
+#maininformation {
+    background: #ffffff;
+    margin-top: 1%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.5);
+    height: 95%;
+    padding: 0px;
+}
+
+#senderInformation {
+    padding-top:7%;
+}
+
+.main-form a:hover, a:focus {
+    color: #2a6496;
+    text-decoration: none !important;
+}
+
+
+.main-form label {
+    font-weight: lighter !important;
+    font-size: 12px !important;
+    font-style:  !important;
 }
