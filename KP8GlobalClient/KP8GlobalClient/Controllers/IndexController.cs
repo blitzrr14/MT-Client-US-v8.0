@@ -9,21 +9,26 @@ using System.Security.Claims;
 
 namespace KP8GlobalClient.Controllers
 {
-    [AllowAnonymous]
+   [Authorize]
     public class IndexController : Controller
     {
+       
         [HttpGet]
+        [AllowAnonymous]
         public ActionResult LogIn() 
         {
-            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
+            //if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
+            if (this.Session["User"] != null)
                 return RedirectToAction("Home", "Home");
             else
                 return View();
         }
 
+
+       [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public ActionResult LogIn(LoginModel Login)
+        public ActionResult LoginUser(LoginModel Login)
         {
             if (!ModelState.IsValid)
                 return PartialView(Login);

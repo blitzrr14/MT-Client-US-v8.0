@@ -22,7 +22,7 @@ namespace KP8GlobalClient.Controllers
                 return RedirectToAction("LogIn", "Index");
             }
             else { 
-            return PartialView(new LoginModel { FName = this.Session["User"].ToString(),
+            return View(new LoginModel { FName = this.Session["User"].ToString(),
                                                 Branch = this.Session["Bracnh"].ToString(),
                                                 Role = this.Session["Role"].ToString(),
                                                 Server = this.Session["Server"].ToString()
