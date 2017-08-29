@@ -17,52 +17,46 @@ namespace KP8GlobalClient.Controllers
         [AllowAnonymous]
         public ActionResult LogIn() 
         {
-            //if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
-            if (this.Session["User"] != null)
+            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
+            //if (this.Session["User"] != null)
                 return RedirectToAction("Home", "Home");
             else
                 return View();
         }
 
 
-       [AllowAnonymous]
+        [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult LoginUser(LoginModel Login)
         {
             if (!ModelState.IsValid)
                 return PartialView(Login);
-            try
+            else
             {
-                var UserData = new LoginModel();
                 var getInfo = new UserAdminLogin().getUserLogin();
 
-                if (getInfo.Username == Login.Username.ToLower() &&
-                    getInfo.Password == Login.Password)
+                if (getInfo.Username == Login.Username.ToLower() && getInfo.Password == Login.Password)
                 {
                     var userLogged = new ClaimsIdentity(new[] { new Claim(ClaimTypes.UserData, getInfo.Username),
                                                                 new Claim(ClaimTypes.Authentication, "MLKP"),
                                                                 new Claim(ClaimTypes.Role, getInfo.Role),
                                                                 new Claim(ClaimTypes.GivenName, getInfo.FName)
                                                               }, "KP8GC");
+                    Request.GetOwinContext().Authentication.SignIn(userLogged);
+
                     this.Session["User"] = getInfo.FName;
                     this.Session["Branch"] = getInfo.Branch;
                     this.Session["Role"] = getInfo.Role;
                     this.Session["Server"] = getInfo.Server;
-                    Request.GetOwinContext().Authentication.SignIn(userLogged);
+
                     return RedirectToAction("Index", "Sendout");
-                    
                 }
                 else
-                {
-                    UserData.ErrorMessage = "Username and Password did not match";
-                    return PartialView(UserData);
-                }
+                    Login.ErrorMessage = "Username and Password did not match";
+
             }
-            catch (Exception)
-            {
-                return PartialView(Login);
-            }
+            return PartialView("LogIn", Login);
         }
 
         [HttpGet]

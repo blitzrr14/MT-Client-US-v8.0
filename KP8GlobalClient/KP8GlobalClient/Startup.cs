@@ -1,10 +1,10 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(KP8GlobalClient.Startup))]
-namespace KP8GlobalClient
+[assembly: OwinStartupAttribute(typeof(KP8GlobalClient.App_Start.StartUp))]
+namespace KP8GlobalClient.App_Start
 {
-    public partial class Startup
+    public partial class StartUp
     {
         public void Configuration(IAppBuilder app)
         {
