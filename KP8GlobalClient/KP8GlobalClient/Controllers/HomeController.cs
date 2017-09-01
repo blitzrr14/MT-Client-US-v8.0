@@ -23,22 +23,11 @@ namespace KP8GlobalClient.Controllers
             }
             else { 
             return View(new LoginModel { FName = this.Session["User"].ToString(),
-                                                Branch = this.Session["Bracnh"].ToString(),
-                                                Role = this.Session["Role"].ToString(),
-                                                Server = this.Session["Server"].ToString()
-                                              });
+                                         Branch = this.Session["Bracnh"].ToString(),
+                                         Role = this.Session["Role"].ToString(),
+                                         Server = this.Session["Server"].ToString()
+                                       });
             }
-        }
-
-
-        public ActionResult HomeHeaderBar()
-        {
-            return PartialView();
-        }
-
-        public ActionResult HomeFooterBar()
-        {
-            return PartialView();
         }
 	}
 }

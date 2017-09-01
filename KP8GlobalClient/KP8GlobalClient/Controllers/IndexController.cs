@@ -15,20 +15,20 @@ namespace KP8GlobalClient.Controllers
        
         [HttpGet]
         [AllowAnonymous]
-        public ActionResult LogIn() 
+        public ActionResult Index() 
         {
             if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
             //if (this.Session["User"] != null)
                 return RedirectToAction("Home", "Home");
             else
-                return View();
+                return View("LogIn");
         }
 
 
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public ActionResult LoginUser(LoginModel Login)
+        public ActionResult LogIn(LoginModel Login)
         {
             if (!ModelState.IsValid)
                 return PartialView(Login);

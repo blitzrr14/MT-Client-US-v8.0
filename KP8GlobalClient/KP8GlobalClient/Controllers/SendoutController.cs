@@ -12,7 +12,7 @@ namespace KP8GlobalClient.Controllers
         // GET: /Sendout/
         public ActionResult Index()
         {
-            return View();
+            return PartialView();
         }
 	}
 }
