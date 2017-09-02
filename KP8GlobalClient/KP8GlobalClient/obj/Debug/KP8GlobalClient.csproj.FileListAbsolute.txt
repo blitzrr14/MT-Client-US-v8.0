@@ -201,3 +201,44 @@ D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microso
 D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\EntityFramework.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll.config
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\KP8GlobalClient.pdb
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\MySql.Data.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\WebGrease.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\EntityFramework.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Helpers.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Mvc.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Optimization.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.Razor.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Newtonsoft.Json.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\Antlr3.Runtime.pdb
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\EntityFramework.xml
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
+C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb

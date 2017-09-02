@@ -17,7 +17,8 @@ namespace KP8GlobalClient.Controllers
         [AllowAnonymous]
         public ActionResult Index() 
         {
-            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP") && this.Session["User"] != null)
+            //String theUser = this.Session["User"].ToString();
+            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP"))// && theUser != string.Empty)
             //if (this.Session["User"] != null)
                 return RedirectToAction("Home", "Home");
             else
