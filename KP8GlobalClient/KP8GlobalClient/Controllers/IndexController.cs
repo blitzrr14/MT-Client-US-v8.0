@@ -6,13 +6,16 @@ using System.Web.Mvc;
 
 using KP8GlobalClient.Models;
 using System.Security.Claims;
+using AESEncrypt;
 
 namespace KP8GlobalClient.Controllers
 {
    [Authorize]
     public class IndexController : Controller
     {
-       
+        //private AESEncryption encdata = new AESEncryption();
+        //private String encStringKey = "B905BD7BFBD902DCB115B327F9018CEA";
+        
         [HttpGet]
         [AllowAnonymous]
         public ActionResult Index() 
@@ -25,15 +28,12 @@ namespace KP8GlobalClient.Controllers
                 return View("LogIn");
         }
 
-
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult LogIn(LoginModel Login)
         {
-            if (!ModelState.IsValid)
-                return PartialView(Login);
-            else
+            if (ModelState.IsValid)
             {
                 var getInfo = new UserAdminLogin().getUserLogin();
 
@@ -51,13 +51,12 @@ namespace KP8GlobalClient.Controllers
                     this.Session["Role"] = getInfo.Role;
                     this.Session["Server"] = getInfo.Server;
 
-                    return RedirectToAction("Index", "Sendout");
+                    return RedirectToAction("Home", "Home");
                 }
                 else
                     Login.ErrorMessage = "Username and Password did not match";
-
             }
-            return PartialView("LogIn", Login);
+            return PartialView(Login);
         }
 
         [HttpGet]

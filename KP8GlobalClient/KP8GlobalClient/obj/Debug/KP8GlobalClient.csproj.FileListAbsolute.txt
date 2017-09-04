@@ -242,3 +242,4 @@ C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalC
 C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.csprojResolveAssemblyReference.cache
 C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.dll
 C:\Users\VenZ\Documents\Visual Studio 2013\Projects\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\obj\Debug\KP8GlobalClient.pdb
+D:\Khe Project\KP8\MT-Client-US-v8.0\KP8GlobalClient\KP8GlobalClient\bin\AESEncrypt.dll

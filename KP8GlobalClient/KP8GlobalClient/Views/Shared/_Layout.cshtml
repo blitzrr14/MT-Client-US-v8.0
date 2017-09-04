@@ -12,7 +12,7 @@
 <body>    
     <header>
         <nav>
-            @if (ViewBag.Title != "Login") { Html.RenderPartial("_HeaderLinks"); }
+            @if (ViewBag.Title == "Home") { Html.RenderPartial("_headerLinks"); }
         </nav>
     </header>
 

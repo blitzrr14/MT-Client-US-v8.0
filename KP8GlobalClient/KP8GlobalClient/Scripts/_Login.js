@@ -3,10 +3,12 @@
     $('form#Login').on("submit", function (e) {
         ajaxLoadModal('Authenticating...');
         e.preventDefault();
-        //$('form#Login').validate();
+        
+        //$(this).validate();
 
         if ($(this).valid())
         {
+            console.log("Valid!");
             $.ajax({
                 async: true,
                 type: 'POST',
@@ -22,10 +24,10 @@
                 error: function (jqXHR, textStatus, errorThrown) {
                     unExpectedError();
                 }
-            });
+            });   
         }
         else
-        {
+        {   
             ajaxLoadModal();
         }
     });

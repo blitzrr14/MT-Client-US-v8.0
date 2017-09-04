@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AESEncrypt">
+      <HintPath>C:\Users\Administrator\Desktop\PayNearMe\PayNearMe\bin\AESEncrypt.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\..\..\..\..\DESKTOP\PayNearMe\PayNearMe\bin\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -222,6 +225,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sendout\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_headerLinks.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

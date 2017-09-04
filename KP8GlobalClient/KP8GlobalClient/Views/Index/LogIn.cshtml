@@ -14,7 +14,7 @@
             USER AUTHENTICATION
         </span>
 
-        @using (Html.BeginForm("LoginUser", "Index", FormMethod.Post, new { @class = "formLogin", @id = "Login" }))
+        @using (Html.BeginForm("LogIn", "Index", FormMethod.Post, new { @class = "formLogin", @id = "Login" }))
         {
             @Html.AntiForgeryToken()
             <div class="input-group" style="width: 100%;">
@@ -40,7 +40,8 @@
             @if (Model != null && Model.ErrorMessage != null)
             { @Model.ErrorMessage }
         </div>
+
     </div> 
 </div>
 
-<script src="../Scripts/_Login.js" type="text/javascript" ></script>
+<script src="../Scripts/_Login.js" type="text/javascript"></script>
