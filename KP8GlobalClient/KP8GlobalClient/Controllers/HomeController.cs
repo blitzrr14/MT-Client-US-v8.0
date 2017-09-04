@@ -17,9 +17,13 @@ namespace KP8GlobalClient.Controllers
             //                                    Role = this.Session["Role"].ToString(),
             //                                    Server = this.Session["Server"].ToString()
             //                                  };
-            ViewBag.Title = "Home";
-            return View();
-            
+            //ViewBag.Title = "Home";
+            return PartialView();
+        }
+
+        public ActionResult _headerLinks()
+        {
+            return PartialView("_headerLinks");
         }
 	}
 }

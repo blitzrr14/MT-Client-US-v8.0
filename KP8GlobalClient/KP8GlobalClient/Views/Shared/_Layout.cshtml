@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="@Url.Content("~/Image/favicon.ico")" />
-    <title>@ViewBag.Title ─ MLhuillier Inc. Global Client</title>
+    <title>@*@ViewBag.Title ─*@ MLhuillier Inc. Global Client</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/jquery")
     @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
 <body>    
     <header>
-        <nav>
+        <nav id="hdrLinks">
             @if (ViewBag.Title == "Home") { Html.RenderPartial("_headerLinks"); }
         </nav>
     </header>

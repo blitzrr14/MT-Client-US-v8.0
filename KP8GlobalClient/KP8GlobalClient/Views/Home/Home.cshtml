@@ -1,6 +1,26 @@
 ﻿@model KP8GlobalClient.Models.LoginModel
 <br />
-@*User : @Model.FName '|' Branch : @Model.Branch '|' Role : @Model.Role '|' Server : @Model.Server ──*@ 
-
-@Html.ActionLink("Logout", "LogOut", "Index", "", 
-                 new { @style = "background-color: green; border-color: gray; padding: 6px 12px; border-radius: 5px; text-decoration: none; color: white;" })
+@*User : @Model.FName '|' Branch : @Model.Branch '|' Role : @Model.Role '|' Server : @Model.Server ──*@
+<script>
+    $(
+        function () {
+            $.ajax({
+                async: true,
+                type: 'GET',
+                url: '/Home/_headerLinks',
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                dataType: 'html',
+                cache: false,
+                success: function (result) {
+                    $('nav#hdrLinks').html(result);
+                    setTimeout(function () {
+                        hideModals();
+                    }, 500);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    unExpectedError();
+                }
+            });
+        }
+    )
+</script>

@@ -1,4 +1,5 @@
 ﻿$(function () {
+    hideModals();
 
     $('form#Login').on("submit", function (e) {
         ajaxLoadModal('Authenticating...');
@@ -19,7 +20,7 @@
                 cache: false,
                 success: function (result) {
                     $('div#content-holder').html(result);
-                    ajaxLoadModal();
+                    //ajaxLoadModal();
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     unExpectedError();
