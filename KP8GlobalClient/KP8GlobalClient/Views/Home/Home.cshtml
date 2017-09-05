@@ -4,6 +4,7 @@
 <script>
     $(
         function () {
+            ajaxLoadModal("Signed in");
             $.ajax({
                 async: true,
                 type: 'GET',
@@ -12,10 +13,8 @@
                 dataType: 'html',
                 cache: false,
                 success: function (result) {
+                    ajaxLoadModal("Rendering tools");
                     $('nav#hdrLinks').html(result);
-                    setTimeout(function () {
-                        hideModals();
-                    }, 500);
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     unExpectedError();

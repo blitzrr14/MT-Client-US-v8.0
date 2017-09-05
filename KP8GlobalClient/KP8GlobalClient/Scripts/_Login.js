@@ -9,7 +9,6 @@
 
         if ($(this).valid())
         {
-            console.log("Valid!");
             $.ajax({
                 async: true,
                 type: 'POST',

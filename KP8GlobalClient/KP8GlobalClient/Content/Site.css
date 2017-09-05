@@ -263,6 +263,15 @@ div .form-control {
     z-index: -1;
 }
 
+.blockerIn {
+    opacity: 1;
+    z-index: 5;
+}
+.blockerOut {
+    opacity: 0;
+    z-index: -1;
+}
+
 @media (max-width: 301px) {
     .formLoginLabel {
         transition-duration: 0.3s;

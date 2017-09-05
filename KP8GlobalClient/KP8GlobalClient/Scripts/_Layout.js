@@ -1,23 +1,25 @@
 ﻿$(function () {    
     //equivalent to document.ready
+    $('#uiBlocker').removeClass('blockerIn');
+    $('#uiBlocker').addClass('blockerOut');
 });
 
 function ajaxLoadModal(msg) {
     if (typeof msg != 'string') {
-        if ($('#uiBlocker').hasClass('fadeIn')) {
-            $('#uiBlocker').removeClass('fadeIn');
-            $('#uiBlocker').addClass('fadeOut');
+        if ($('#uiBlocker').hasClass('blockerIn')) {
+            $('#uiBlocker').removeClass('blockerIn');
+            $('#uiBlocker').addClass('blockerOut');
         }
         else {
-            $('#uiBlocker').removeClass('fadeOut');
-            $('#uiBlocker').addClass('fadeIn');
+            $('#uiBlocker').removeClass('blockerOut');
+            $('#uiBlocker').addClass('blockerIn');
         }
     }
     else {
         document.getElementById("ajxMsg").innerHTML = (msg == "" ? "Please Wait..." : (msg + '...'));
-        if ($('#uiBlocker').hasClass('fadeOut')) {
-            $('#uiBlocker').removeClass('fadeOut');
-            $('#uiBlocker').addClass('fadeIn');
+        if ($('#uiBlocker').hasClass('blockerOut')) {
+            $('#uiBlocker').removeClass('blockerOut');
+            $('#uiBlocker').addClass('blockerIn');
         }
     }
 }
@@ -34,7 +36,6 @@ function hideModals() {
 }
 
 var errorRetries = 0;
-
 function unExpectedError() {
     if (errorRetries < 2)
         msgBox('Something went wrong, <br /> Please try again...');

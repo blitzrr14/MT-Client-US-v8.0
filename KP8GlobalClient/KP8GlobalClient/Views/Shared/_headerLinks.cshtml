@@ -1,4 +1,90 @@
-﻿<div>
-    Home | Sendout | Payout | Reports | KP2Go | BillsPayment | System ─
-    @Html.ActionLink("Logout", "LogOut", "Index", "", new { @style = "background-color: green; border-color: gray; padding: 6px 12px; border-radius: 5px; text-decoration: none; color: white;" })
+﻿<style>
+    .headerMenu {
+        transition: 1s;
+        display: inline-block;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 52px;
+    }
+    .headerShow {
+        width: 504px;
+    }
+    .headerHide {
+        width: 0px;
+    }
+    ul#headerLinkLists > li {
+        float: left;   
+    }
+    ul#headerLinkLists > li > a {
+        display: block;
+        padding: 0 10px;
+        text-decoration: none;
+        color: inherit;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    ul#headerLinkLists > li > a:hover {
+        color: white;
+        background-color: #171717;
+        border-bottom: 3px solid white;
+    }
+</style>
+
+<div class="headerMenu headerHide">
+    <div style="width: 550px; overflow: hidden;">
+        <ul id="headerLinkLists" style="display: inline; list-style-type: none;">
+            <li><a id="SO">Sendout</a></li>
+            <li><a id="PO">Payout</a></li>
+            <li><a id="RE">Reports</a></li>
+            <li><a id="KG">KP2Go</a></li>
+            <li><a id="BP">BillsPayment</a></li>
+            <li><a id="SY">System</a></li>
+            <li>
+                @Html.ActionLink("Logout", "LogOut", "Index", "", new { @style = "" })
+            </li>
+        </ul>
+    </div>
 </div>
+
+<script>
+    $(function () {
+        setTimeout(function () {
+            $(".headerMenu").removeClass('headerHide');
+            $(".headerMenu").addClass('headerShow');
+            setTimeout(function () {
+                hideModals();
+            }, 500);
+        }, 500);
+
+        var sendoutIsClicked = false;
+        $('a#SO').click(function () {
+            ajaxLoadModal("Rendering Tool");
+
+            if (sendoutIsClicked) {
+                sendoutIsClicked = false;
+                $('div#content-holder').html("");
+                ajaxLoadModal();
+            }
+            else {
+                $.ajax({
+                    async: true,
+                    type: 'GET',
+                    url: '/Sendout/Index',
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                    dataType: 'html',
+                    cache: false,
+                    success: function (result) {
+                        sendoutIsClicked = true;
+                        $('div#content-holder').html(result);
+                        setTimeout(function () {
+                            ajaxLoadModal();
+                        }, 500)
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        unExpectedError();
+                    }
+                });
+            }
+        })
+    })
+</script>
