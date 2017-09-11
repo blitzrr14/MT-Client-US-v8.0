@@ -19,11 +19,9 @@ namespace KP8GlobalClient.Controllers
         [HttpGet]
         [AllowAnonymous]
         public ActionResult Index() 
-        {   
-            //String theUser = this.Session["User"].ToString();
+        {
             if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP"))// && theUser != string.Empty)
-            //if (this.Session["User"] != null)
-                return RedirectToAction("Home", "Home", new HomeModel { isLoggedIn = true });
+                return View("Home");
             else
                 return View("LogIn");
         }
@@ -51,7 +49,7 @@ namespace KP8GlobalClient.Controllers
                     this.Session["Role"] = getInfo.Role;
                     this.Session["Server"] = getInfo.Server;
 
-                    return RedirectToAction("Home", "Home");
+                    return PartialView("Home");
                 }
                 else
                     Login.ErrorMessage = "Username and Password did not match";

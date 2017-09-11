@@ -52,6 +52,9 @@ input.input-validation-error {
 input[type="checkbox"].input-validation-error {
     border: 0 none;
 }
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
 .validation-summary-errors {
     color: #b94a48;
 }

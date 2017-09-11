@@ -1,0 +1,112 @@
+﻿.headerMenu {
+        transition: 1s;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 52px;
+}
+.headerShow {
+    width: 504px;
+}
+.headerHide {
+    width: 0px;
+}
+
+header > nav > div {
+    width: 550px;
+    overflow: hidden;
+}
+
+ul#headerLinkLists {
+    display: inline;
+    list-style-type: none;
+}
+ul#headerLinkLists > li {
+    float: left;   
+}
+ul#headerLinkLists > li > a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: inherit;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+ul#headerLinkLists > li > a:hover {
+    color: white;
+    background-color: #171717;
+    border-bottom: 4px solid red;
+}
+ul#headerLinkLists > li > a#ME {
+    display: none;
+    padding: 12px 0;
+}
+ul#headerLinkLists > li > a#ME > div{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 5px auto;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-35deg) translate(-3px, 4px);
+    -khtml-transform: rotate(-35deg) translate(-3px, 4px);
+    -moz-transform: rotate(-35deg) translate(-3px, 4px);
+    -ms-transform: rotate(-35deg) translate(-3px, 4px);
+    -o-transform: rotate(-35deg) translate(-3px, 4px);
+    transform: rotate(-35deg) translate(-3px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(35deg) translate(-5px, -8px);
+    -khtml-transform: rotate(35deg) translate(-5px, -8px);
+    -moz-transform: rotate(35deg) translate(-5px, -8px);
+    -ms-transform: rotate(35deg) translate(-5px, -8px);
+    -o-transform: rotate(35deg) translate(-5px, -8px);
+    transform: rotate(35deg) translate(-5px, -8px);
+}
+
+@media (max-width : 625px) {
+    .headerMenu {
+        overflow: visible;
+        float: left;
+    }
+    .headerShow {
+        width: 0px;
+    }
+    ul#headerLinkLists {
+        display: block;
+    }
+    ul#headerLinkLists > li {
+        float: none;   
+    }
+    header > nav > div {
+        width: 150px;
+        overflow: visible;
+        background-color: black;
+    }
+    header nav {
+        text-align: center;
+        line-height: 30px;
+        color: #AAA;
+    }
+    ul#headerLinkLists > li.menuLists {
+        transition-duration: 0.5s;
+        line-height: 48px;
+    }
+    ul#headerLinkLists > li > a#ME {
+        display: block;
+    }
+
+    .moveUp {
+        height: 0px;
+        overflow: hidden;
+    }
+    .viewMenu{
+        height: 50px;
+        overflow: visible;
+    }
+}

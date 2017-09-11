@@ -16,7 +16,12 @@ function ajaxLoadModal(msg) {
         }
     }
     else {
-        document.getElementById("ajxMsg").innerHTML = (msg == "" ? "Please Wait..." : (msg + '...'));
+        try { 
+            document.getElementById("ajxMsg").innerHTML = (msg == "" || msg == null ? "Please Wait..." : (msg + '...'));
+        }
+        catch (Error) {
+            console.log("ajxMsg element was not yet loaded... ignore");
+        }
         if ($('#uiBlocker').hasClass('blockerOut')) {
             $('#uiBlocker').removeClass('blockerOut');
             $('#uiBlocker').addClass('blockerIn');

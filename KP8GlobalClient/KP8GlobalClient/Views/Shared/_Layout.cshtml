@@ -7,13 +7,12 @@
     <title>@*@ViewBag.Title ─*@ MLhuillier Inc. Global Client</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/globalClientFunctions")
     @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
 <body>    
     <header>
-        <nav id="hdrLinks">
-            
-        </nav>
+        
     </header>
 
     <div id="content-holder">
@@ -52,7 +51,6 @@
             </center>
         </div>
     </div>
-
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

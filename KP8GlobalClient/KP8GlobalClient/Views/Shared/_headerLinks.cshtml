@@ -1,50 +1,29 @@
 ﻿<style>
-    .headerMenu {
-        transition: 1s;
-        display: inline-block;
-        margin: 0 auto;
-        overflow: hidden;
-        height: 52px;
-    }
-    .headerShow {
-        width: 504px;
-    }
-    .headerHide {
-        width: 0px;
-    }
-    ul#headerLinkLists > li {
-        float: left;   
-    }
-    ul#headerLinkLists > li > a {
-        display: block;
-        padding: 0 10px;
-        text-decoration: none;
-        color: inherit;
-        transition-duration: 0.3s;
-        cursor: pointer;
-    }
-    ul#headerLinkLists > li > a:hover {
-        color: white;
-        background-color: #171717;
-        border-bottom: 3px solid white;
-    }
+    
 </style>
 
-<div class="headerMenu headerHide">
-    <div style="width: 550px; overflow: hidden;">
-        <ul id="headerLinkLists" style="display: inline; list-style-type: none;">
-            <li><a id="SO">Sendout</a></li>
-            <li><a id="PO">Payout</a></li>
-            <li><a id="RE">Reports</a></li>
-            <li><a id="KG">KP2Go</a></li>
-            <li><a id="BP">BillsPayment</a></li>
-            <li><a id="SY">System</a></li>
+<nav class="headerMenu headerHide">
+    <div>
+        <ul id="headerLinkLists">
             <li>
+                <a id="ME" onclick="toggLeMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </li>
+            <li class="menuLists moveUp"><a id="SO">Sendout</a></li>
+            <li class="menuLists moveUp"><a id="PO">Payout</a></li>
+            <li class="menuLists moveUp"><a id="RE">Reports</a></li>
+            <li class="menuLists moveUp"><a id="KG">KP2Go</a></li>
+            <li class="menuLists moveUp"><a id="BP">BillsPayment</a></li>
+            <li class="menuLists moveUp"><a id="SY">System</a></li>
+            <li class="menuLists moveUp">
                 @Html.ActionLink("Logout", "LogOut", "Index", "", new { @style = "" })
             </li>
         </ul>
     </div>
-</div>
+</nav>
 
 <script>
     $(function () {
@@ -87,4 +66,16 @@
             }
         })
     })
+
+    function toggLeMenu(btnMenuToggler) {
+        btnMenuToggler.classList.toggle("change");
+        if ($('.menuLists').hasClass('moveUp')) {
+            $('.menuLists').removeClass('moveUp');
+            $('.menuLists').addClass('viewMenu');
+        }
+        else {
+            $('.menuLists').removeClass('viewMenu');
+            $('.menuLists').addClass('moveUp');
+        }
+    }
 </script>

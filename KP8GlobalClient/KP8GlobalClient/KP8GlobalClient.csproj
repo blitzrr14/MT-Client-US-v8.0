@@ -180,6 +180,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\Sendout.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\_headerMenus.css" />
     <Content Include="Content\_SVGImageLoad.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -198,6 +199,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\Sendout.js" />
+    <Content Include="Scripts\_Home.js" />
     <Content Include="Scripts\_Layout.js" />
     <Content Include="Scripts\_Login.js" />
     <Content Include="Scripts\_references.js" />
@@ -216,7 +218,7 @@
     <Content Include="Views\Index\LogIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Shared\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -19,13 +19,17 @@ namespace KP8GlobalClient
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/_Layout.js",
+                      "~/Scripts/bootstrap.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/globalClientFunctions").Include(
                       "~/Scripts/Sendout.js",
+                      "~/Scripts/_Home.js",
+                      "~/Scripts/_Layout.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/_headerMenus.css",
                       //"~/Content/font-awesome.css",
                       "~/Content/_SVGImageLoad.css",
                       "~/Content/Sendout.css",
