@@ -14,14 +14,16 @@
 header > nav > div {
     width: 550px;
     overflow: hidden;
+    background-color: #ca0f0f;
 }
 
 ul#headerLinkLists {
     display: inline;
     list-style-type: none;
+    box-sizing: border-box;
 }
 ul#headerLinkLists > li {
-    float: left;   
+    float: left;
 }
 ul#headerLinkLists > li > a {
     display: block;
@@ -33,8 +35,11 @@ ul#headerLinkLists > li > a {
 }
 ul#headerLinkLists > li > a:hover {
     color: white;
-    background-color: #171717;
-    border-bottom: 4px solid red;
+    box-sizing: border-box;
+    /*background-color: #171717;*/
+    background-color: red;
+    /*border-bottom: 4px solid red;*/
+    border-bottom: 4px solid orange;
 }
 ul#headerLinkLists > li > a#ME {
     display: none;
@@ -69,8 +74,9 @@ ul#headerLinkLists > li > a#ME > div{
     transform: rotate(35deg) translate(-5px, -8px);
 }
 
-@media (max-width : 625px) {
+@media (max-width : 705px) {
     .headerMenu {
+        transition-delay: 1s;
         overflow: visible;
         float: left;
     }
@@ -86,12 +92,6 @@ ul#headerLinkLists > li > a#ME > div{
     header > nav > div {
         width: 150px;
         overflow: visible;
-        background-color: black;
-    }
-    header nav {
-        text-align: center;
-        line-height: 30px;
-        color: #AAA;
     }
     ul#headerLinkLists > li.menuLists {
         transition-duration: 0.5s;

@@ -1,13 +1,17 @@
 ﻿body {
-    background: url('../Image/Sinulog2.jpg') no-repeat fixed #1f0f0f; 
-    background-size: cover;
+    /*background: url('../Image/Sinulog2.jpg') no-repeat fixed #1f0f0f; 
+    background-size: cover;*/
+    background: url('../Image/mlhuillier-logo.jpg') no-repeat fixed lightgray; 
+    background-size: contain;
+    background-position: center;
 }
 header {
     position: fixed; 
     top: 0px; 
     width: 100%; 
     height: 50px; 
-    background-color: black; 
+    /*background-color: black;*/
+    background-color: #ca0f0f;
     z-index: 3;
     -khtml-user-select: none; 
     -webkit-user-select: none; 
@@ -19,7 +23,8 @@ header {
 header nav {
     text-align: center;
     line-height: 50px;
-    color: #AAA;
+    /*color: #AAA;*/
+    color: white;
 }
 footer {
     position: fixed; 
@@ -29,7 +34,8 @@ footer {
     line-height: 30px; 
     z-index: 3;
     text-align: center; 
-    background-color: black; 
+    /*background-color: black;*/
+    background-color: #ca0f0f;
     overflow: hidden; 
     -khtml-user-select: none; 
     -webkit-user-select: none; 

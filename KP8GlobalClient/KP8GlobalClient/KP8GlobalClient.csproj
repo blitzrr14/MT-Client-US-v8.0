@@ -186,6 +186,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Image\favicon.ico" />
+    <Content Include="Image\mlhuillier-logo.jpg" />
     <Content Include="Image\Sinulog2.jpg" />
     <Content Include="Image\_CircleAjaxLoad.svg" />
     <Content Include="Image\_MLAjaxLoad.svg" />
