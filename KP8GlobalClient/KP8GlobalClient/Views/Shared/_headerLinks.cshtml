@@ -64,14 +64,13 @@
         });
 
         window.addEventListener('resize', function () {
-            console.log('Lock and Loaded! resize pa more!');
             toggLeMenuOff($('a#ME'));
         });
 
         //$('header').focusout(function () { toggLeMenuOff($('a#ME')); })
         //$('header').hover(function () { }, function () { toggLeMenuOff($('a#ME')) })
         $('a#ME').on('click', function () {
-            $('#headerLinkLists').focus();
+            $('#headerLinkLists').toggleClass("").focus();
             toggLeMenu(this);
             console.log('this is focused');
         });
@@ -79,7 +78,6 @@
             console.log('focused out');
             toggLeMenuOff($('a#ME'));
         })
-        
     })
 
     function toggLeMenu(btnMenuToggler) {
@@ -87,7 +85,7 @@
         if ($('.menuLists').hasClass('moveUp')) {
             $('.menuLists').removeClass('moveUp');
             $('.menuLists').addClass('viewMenu');
-            $('#headerLinkLists').attr('style', 'background-color: #da2020;')
+            $('#headerLinkLists').attr('style', 'background-color: #9a0e0e;')
         }
         else {
             $('.menuLists').removeClass('viewMenu');
