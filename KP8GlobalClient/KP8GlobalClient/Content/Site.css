@@ -1,7 +1,7 @@
 ﻿body {
     /*background: url('../Image/Sinulog2.jpg') no-repeat fixed #1f0f0f; 
     background-size: cover;*/
-    background: url('../Image/mlhuillier-logo.jpg') no-repeat fixed lightgray; 
+    background: url('../Image/mlhuillier-logo.svg') no-repeat fixed lightgray; 
     background-size: contain;
     background-position: center;
 }
@@ -22,7 +22,7 @@ header {
 }
 header nav {
     text-align: center;
-    line-height: 50px;
+    line-height: 46px;
     /*color: #AAA;*/
     color: white;
 }

@@ -1,8 +1,8 @@
 ﻿.headerMenu {
-        transition: 1s;
-        margin: 0 auto;
-        overflow: hidden;
-        height: 52px;
+    transition-duration: 1s;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 52px;
 }
 .headerShow {
     width: 504px;
@@ -20,7 +20,6 @@ header > nav > div {
 ul#headerLinkLists {
     display: inline;
     list-style-type: none;
-    box-sizing: border-box;
 }
 ul#headerLinkLists > li {
     float: left;
@@ -32,18 +31,18 @@ ul#headerLinkLists > li > a {
     color: inherit;
     transition-duration: 0.3s;
     cursor: pointer;
+    border-bottom: 4px solid rgba(202,15,15,0);
 }
 ul#headerLinkLists > li > a:hover {
     color: white;
-    box-sizing: border-box;
     /*background-color: #171717;*/
     background-color: red;
     /*border-bottom: 4px solid red;*/
-    border-bottom: 4px solid orange;
+    border-color: white;
 }
 ul#headerLinkLists > li > a#ME {
     display: none;
-    padding: 12px 0;
+    padding: 10px 0;
 }
 ul#headerLinkLists > li > a#ME > div{
     width: 30px;
@@ -94,8 +93,8 @@ ul#headerLinkLists > li > a#ME > div{
         overflow: visible;
     }
     ul#headerLinkLists > li.menuLists {
-        transition-duration: 0.5s;
-        line-height: 48px;
+        transition-duration: .5s;
+        /*line-height: 48px;*/
     }
     ul#headerLinkLists > li > a#ME {
         display: block;

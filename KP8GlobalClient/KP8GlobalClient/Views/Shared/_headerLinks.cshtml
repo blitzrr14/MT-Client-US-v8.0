@@ -1,12 +1,8 @@
-﻿<style>
-    
-</style>
-
-<nav class="headerMenu headerHide">
+﻿<nav class="headerMenu headerHide">
     <div>
         <ul id="headerLinkLists">
             <li>
-                <a id="ME" onclick="toggLeMenu(this);" title="Menu">
+                <a id="ME" @*onclick="toggLeMenu(this);"*@ title="Menu">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -16,7 +12,7 @@
             <li class="menuLists moveUp"><a id="PO">Payout</a></li>
             <li class="menuLists moveUp"><a id="RE">Reports</a></li>
             <li class="menuLists moveUp"><a id="KG">KP2Go</a></li>
-            <li class="menuLists moveUp"><a id="BP">BillsPayment</a></li>
+            <li class="menuLists moveUp"><a id="BP">Bills Payment</a></li>
             <li class="menuLists moveUp"><a id="SY">System</a></li>
             <li class="menuLists moveUp">
                 @Html.ActionLink("Logout", "LogOut", "Index", "", new { @style = "" })
@@ -72,7 +68,18 @@
             toggLeMenuOff($('a#ME'));
         });
 
-        $('header').focusout(function () { toggLeMenuOff($('a#ME')); })
+        //$('header').focusout(function () { toggLeMenuOff($('a#ME')); })
+        //$('header').hover(function () { }, function () { toggLeMenuOff($('a#ME')) })
+        $('a#ME').on('click', function () {
+            $('#headerLinkLists').focus();
+            toggLeMenu(this);
+            console.log('this is focused');
+        });
+        $('#headerLinkLists').on('focusout', function () {
+            console.log('focused out');
+            toggLeMenuOff($('a#ME'));
+        })
+        
     })
 
     function toggLeMenu(btnMenuToggler) {
@@ -80,10 +87,12 @@
         if ($('.menuLists').hasClass('moveUp')) {
             $('.menuLists').removeClass('moveUp');
             $('.menuLists').addClass('viewMenu');
+            $('#headerLinkLists').attr('style', 'background-color: #da2020;')
         }
         else {
             $('.menuLists').removeClass('viewMenu');
             $('.menuLists').addClass('moveUp');
+            $('#headerLinkLists').removeAttr('style');
         }
     }
     function toggLeMenuOff(btnMenuToggler) {
@@ -91,6 +100,7 @@
             $('.menuLists').removeClass('viewMenu');
             $('.menuLists').addClass('moveUp');
             btnMenuToggler.removeClass("change");
+            $('#headerLinkLists').removeAttr('style');
         }
     }
 </script>
