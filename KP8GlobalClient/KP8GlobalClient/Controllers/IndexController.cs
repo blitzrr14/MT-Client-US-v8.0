@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using KP8GlobalClient.Models;
 using System.Security.Claims;
 using AESEncrypt;
+using Microsoft.Owin.Security;
 
 namespace KP8GlobalClient.Controllers
 {
@@ -20,7 +21,7 @@ namespace KP8GlobalClient.Controllers
         [AllowAnonymous]
         public ActionResult Index() 
         {
-            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP"))// && theUser != string.Empty)
+            if (Request.GetOwinContext().Authentication.User.HasClaim(ClaimTypes.Authentication, "MLKP"))
                 return View("Home");
             else
                 return View("LogIn");
@@ -42,11 +43,11 @@ namespace KP8GlobalClient.Controllers
                                                                 new Claim(ClaimTypes.Role, getInfo.Role),
                                                                 new Claim(ClaimTypes.GivenName, getInfo.FName)
                                                               }, "KP8GC");
-                    Request.GetOwinContext().Authentication.SignIn(userLogged);
+                    Request.GetOwinContext().Authentication.SignIn(new AuthenticationProperties { IsPersistent = false }, userLogged);
 
                     this.Session["User"] = getInfo.FName;
                     this.Session["Branch"] = getInfo.Branch;
-                    this.Session["Role"] = getInfo.Role;
+                    this.Session["StationNo"] = getInfo.StationNo;
                     this.Session["Server"] = getInfo.Server;
 
                     return PartialView("Home");

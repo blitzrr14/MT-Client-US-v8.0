@@ -10,9 +10,8 @@
     @Scripts.Render("~/bundles/globalClientFunctions")
     @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
-<body>    
+<body>
     <header>
-        
     </header>
 
     <div id="content-holder">
@@ -27,7 +26,7 @@
             <span id="UserInfo" class="fadeOn">
             </span>
         </nav>
-    </footer>    
+    </footer>
     
     <div id="uiBlocker" class="blockerIn">
         <div class="uiBlocker-content">
@@ -51,6 +50,20 @@
             </center>
         </div>
     </div>
+
+    <div id="sessionExpiredModal" class="hidden">
+        <div class="col-md-12 msgModal-header">
+            Session Expired
+        </div>
+        <div class="col-md-12 msgModal-content" style="text-align: justify;">
+            Current session has already expired due to long inactivity, Please kindly login again <br /> <br /> Thank you...
+            <br /><br />
+            <center>
+                <button onclick="location.href = '/';" class="btnDefault">- OK -</button>
+            </center>
+        </div>
+    </div>
+
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

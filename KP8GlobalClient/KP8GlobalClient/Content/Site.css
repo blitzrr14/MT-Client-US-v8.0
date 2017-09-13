@@ -233,13 +233,13 @@ div .form-control {
     transform: translateX(-50%);
     color: white;
 }
-#msgModal {
+#msgModal, #sessionExpiredModal  {
     position: fixed;
     transform: translate(-50%, -50%);
     width: 300px;
     z-index: 5;
     top: 50%;
-    left: 50%; 
+    left: 50%;
 }
 .msgModal-header {
     border-top-right-radius: 8px;
@@ -254,15 +254,16 @@ div .form-control {
     background: white;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    border-bottom: 2px solid red;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
+    border-bottom: 4px solid red;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
     padding: 10px;
 }
 #msgContainer {
     text-align: center;
     margin: 5px;
 }
+
 .fadeIn {
     opacity: 1;
     z-index: 1;

@@ -1,10 +1,8 @@
 ﻿$(function () {
     hideModals();
-
     $('form#Login').on("submit", function (e) {
         ajaxLoadModal('Authenticating...');
         e.preventDefault();
-        
         //$(this).validate();
 
         if ($(this).valid())

@@ -1,83 +1,171 @@
 ﻿<nav class="headerMenu headerHide">
     <div>
-        <ul id="headerLinkLists">
+        <ul id="headerLinkLists" class="headerLinkLists" tabindex="-1">
             <li>
-                <a id="ME" @*onclick="toggLeMenu(this);"*@ title="Menu">
+                <a id="ME" onclick="toggLeMenu(this);" title="Menu">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </a>
             </li>
-            <li class="menuLists moveUp"><a id="SO">Sendout</a></li>
+            <li class="menuLists moveUp">
+                <a id="SO">Sendout</a>
+                <ul id="SOLists" class="subLinkLists">
+                    <li>
+                        <a>Pre-Payment Disclosure</a>
+                    </li>
+                    <li>
+                        <a>Sendout Transaction</a>
+                    </li>
+                    <li>
+                        <a>Sendout Cancellation</a>
+                    </li>
+                    <li>
+                        <a>Direct to Bank</a>
+                    </li>
+                    <li>
+                        <a>Direct to Bank Cancellation</a>
+                    </li>
+                </ul>
+            </li>
             <li class="menuLists moveUp"><a id="PO">Payout</a></li>
             <li class="menuLists moveUp"><a id="RE">Reports</a></li>
             <li class="menuLists moveUp"><a id="KG">KP2Go</a></li>
             <li class="menuLists moveUp"><a id="BP">Bills Payment</a></li>
             <li class="menuLists moveUp"><a id="SY">System</a></li>
-            <li class="menuLists moveUp">
-                @Html.ActionLink("Logout", "LogOut", "Index", "", new { @style = "" })
-            </li>
         </ul>
+    </div>
+</nav>
+
+<nav id="navUserMenu">
+    <ul id="headerLinkUser" class="headerLinkLists">
+        <li style="padding-top: 8px;">
+            <a id="USERmenu" title="User Info" tabindex="-1">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
+        </li>
+        <li>
+            @Html.ActionLink("Logout", "LogOut", "Index", "", new { @style = "", @onclick = "ajaxLoadModal(\"Logging out\")" })
+        </li>
+    </ul>
+    <div id="userInformation" class="headerUserInfoHide">
+        <div class="row">
+            <div class="col-xs-4">
+                User
+            </div>
+            <div class="col-xs-8" style="overflow: hidden;">
+                <input class="currUserData" value="@Session["User"]" title="@Session["User"]" readonly="" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                Branch
+            </div>
+            <div class="col-xs-8" style="overflow: hidden;">
+                <input class="currUserData" value="@Session["Branch"]" title="@Session["Branch"]" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4" style="padding-right: 0px;">
+                Station No.
+            </div>
+            <div class="col-xs-8" style="">
+                <input class="currUserData" value="@Session["StationNo"]" title="@Session["StationNo"]" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                Server
+            </div>
+            <div class="col-xs-8" style="overflow: hidden;">
+                <input class="currUserData" value="@Session["Server"]" title="@Session["Server"]" readonly />
+            </div>
+        </div>
     </div>
 </nav>
 
 <script>
     $(function () {
-        setTimeout(function () {
-            $(".headerMenu").removeClass('headerHide');
-            $(".headerMenu").addClass('headerShow');
+        var currUser = "@Session["User"]";
+        if (currUser != "") {
             setTimeout(function () {
-                hideModals();
+                $(".headerMenu").removeClass('headerHide');
+                $(".headerMenu").addClass('headerShow');
+                setTimeout(function () {
+                    hideModals();
+                }, 500);
             }, 500);
-        }, 500);
 
-        var sendoutIsClicked = false;
-        $('a#SO').click(function () {
-            ajaxLoadModal("Rendering Tool");
-            toggLeMenuOff($('a#ME'));
+            var sendoutIsClicked = false;
+            $('a#SO').click(function () {
+                ajaxLoadModal("Rendering Tool");
+                toggLeMenuOff($('a#ME'));
 
-            if (sendoutIsClicked) {
-                sendoutIsClicked = false;
-                $('div#content-holder').html("");
-                ajaxLoadModal();
-            }
-            else {
-                $.ajax({
-                    async: true,
-                    type: 'GET',
-                    url: '/Sendout/Index',
-                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-                    dataType: 'html',
-                    cache: false,
-                    success: function (result) {
-                        sendoutIsClicked = true;
-                        $('div#content-holder').html(result);
-                        setTimeout(function () {
-                            ajaxLoadModal();
-                        }, 500)
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        unExpectedError();
-                    }
-                });
-            }
-        });
+                //if (sendoutIsClicked) {
+                //    sendoutIsClicked = false;
+                //    $('div#content-holder').html("");
+                //    ajaxLoadModal();
+                //}
+                //else {
+                //    $.ajax({
+                //        async: true,
+                //        type: 'GET',
+                //        url: '/Sendout/Index',
+                //        contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                //        dataType: 'html',
+                //        cache: false,
+                //        success: function (result) {
+                //            if (result == "") {
+                //                msgSessionExpired();
+                //            }
+                //            else {
+                //                $('div#content-holder').html(result);
+                //                sendoutIsClicked = true;
+                //                setTimeout(function () {
+                //                    ajaxLoadModal();
+                //                }, 500)
+                //            }
+                //        },
+                //        error: function (jqXHR, textStatus, errorThrown) {
+                //            unExpectedError();
+                //        }
+                //    });
+                //}
+            });
 
-        window.addEventListener('resize', function () {
-            toggLeMenuOff($('a#ME'));
-        });
+            window.addEventListener('resize', function () {
+                toggLeMenuOff($('a#ME'));
+            });
 
-        //$('header').focusout(function () { toggLeMenuOff($('a#ME')); })
-        //$('header').hover(function () { }, function () { toggLeMenuOff($('a#ME')) })
-        $('a#ME').on('click', function () {
-            $('#headerLinkLists').toggleClass("").focus();
-            toggLeMenu(this);
-            console.log('this is focused');
-        });
-        $('#headerLinkLists').on('focusout', function () {
-            console.log('focused out');
-            toggLeMenuOff($('a#ME'));
-        })
+            //$('header').hover(function () { }, function () { toggLeMenuOff($('a#ME')) })
+
+            $('#headerLinkLists').focusout(function () {
+                toggLeMenuOff($('a#ME'));
+            });
+
+            $('a#USERmenu').click(function () {
+                if ($('div#userInformation').hasClass('headerUserInfoHide')) {
+                    //document.getElementById('USERmenu').innerHTML = '<img class="diamond horizontal-flipOn" src="../Image/_MLAjaxLoad.svg" draggable="false" style="width: 30px; position: absolute; left:0;"/>';
+                    $('div#userInformation').removeClass('headerUserInfoHide');
+                    $('div#userInformation').addClass('headerUserInfoShow');
+                }
+                else {
+                    //document.getElementById('USERmenu').innerHTML = '<span class="glyphicon glyphicon-user"></span>';
+                    $('div#userInformation').removeClass('headerUserInfoShow');
+                    $('div#userInformation').addClass('headerUserInfoHide');
+                }
+            })
+            .focusout(function () {
+                if ($('div#userInformation').hasClass('headerUserInfoShow')) {
+                    //document.getElementById('USERmenu').innerHTML = '<span class="glyphicon glyphicon-user"></span>';
+                    $('div#userInformation').removeClass('headerUserInfoShow');
+                    $('div#userInformation').addClass('headerUserInfoHide');
+                }
+            });
+        }
+        else {
+            location.href ='/Index/LogOut?Length=0';
+        }
     })
 
     function toggLeMenu(btnMenuToggler) {
@@ -85,7 +173,7 @@
         if ($('.menuLists').hasClass('moveUp')) {
             $('.menuLists').removeClass('moveUp');
             $('.menuLists').addClass('viewMenu');
-            $('#headerLinkLists').attr('style', 'background-color: #9a0e0e;')
+            $('#headerLinkLists').attr('style', 'background-color: #9a0e0e; box-shadow: 3px 3px 15px 0px #222;');
         }
         else {
             $('.menuLists').removeClass('viewMenu');

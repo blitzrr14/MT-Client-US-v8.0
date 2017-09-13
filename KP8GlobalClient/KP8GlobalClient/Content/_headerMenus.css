@@ -5,7 +5,7 @@
     height: 52px;
 }
 .headerShow {
-    width: 504px;
+    width: 442px;
 }
 .headerHide {
     width: 0px;
@@ -17,34 +17,59 @@ header > nav > div {
     background-color: #ca0f0f;
 }
 
-ul#headerLinkLists {
+ul.headerLinkLists, .headerLinkLists {
+    outline: none;
     display: inline;
     list-style-type: none;
+    transition-duration: 0.5s
 }
-ul#headerLinkLists > li {
+ul.headerLinkLists > li {
     float: left;
 }
-ul#headerLinkLists > li > a {
+
+ul.headerLinkLists > li > a {
+    border-bottom: 4px solid rgba(202,15,15,0);
+}
+/* ------- Sub Links CSS -------- */
+ul.subLinkLists {
+    position: fixed;
+    list-style-type: none;
+    text-align: left;
+}
+ul.subLinkLists > li {
+    overflow: hidden;
+}
+
+
+ul.subLinkLists > li {
+    background-color: #d22;
+}
+ul.subLinkLists > li > a {
+    border-left: 4px solid rgba(202,15,15,0);
+}
+ul.headerLinkLists > li > a, ul.subLinkLists > li > a {
     display: block;
     padding: 0 10px;
     text-decoration: none;
     color: inherit;
     transition-duration: 0.3s;
     cursor: pointer;
-    border-bottom: 4px solid rgba(202,15,15,0);
 }
-ul#headerLinkLists > li > a:hover {
+ul.headerLinkLists > li > a:hover {
     color: white;
-    /*background-color: #171717;*/
     background-color: red;
-    /*border-bottom: 4px solid red;*/
     border-color: white;
 }
-ul#headerLinkLists > li > a#ME {
+ul.subLinkLists > li > a:hover {
+    color: white;
+    background-color: red;
+    border-color: white;
+}
+ul.headerLinkLists > li > a#ME {
     display: none;
     padding: 10px 0;
 }
-ul#headerLinkLists > li > a#ME > div{
+ul.headerLinkLists > li > a#ME > div{
     width: 30px;
     height: 2px;
     background-color: white;
@@ -73,6 +98,62 @@ ul#headerLinkLists > li > a#ME > div{
     transform: rotate(35deg) translate(-5px, -8px);
 }
 
+a#USERmenu {
+    transition-duration: 0.5s;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    outline: none;
+}
+
+a#USERmenu:hover {
+    border-width: 2px;
+}
+
+a#USERmenu > span {
+    transform: translate(-50%, -65%);
+    position: absolute;
+    font-size: 16px;
+    color: inherit;
+    left: 50%;
+    top: 50%;
+}
+
+nav#navUserMenu {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+div#userInformation {
+    position: absolute; 
+    right: 0px; 
+    width: 250px; 
+    background-color: #9a0e0e; 
+    box-shadow: 3px 3px 15px 0px #222;
+    text-align: left;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.headerUserInfoShow {
+    height: 206px;
+    padding: 10px;
+}
+.headerUserInfoHide {
+    height: 0px;
+    padding: 0px 10px;
+}
+
+input.currUserData {
+    line-height: normal;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 10px;
+}
 @media (max-width : 705px) {
     .headerMenu {
         transition-delay: 1s;
@@ -96,7 +177,14 @@ ul#headerLinkLists > li > a#ME > div{
         transition-duration: .5s;
         /*line-height: 48px;*/
     }
-    ul#headerLinkLists > li > a#ME {
+    ul.headerLinkLists > li.menuLists > a {
+        border-bottom: none;
+        border-left: 4px solid rgba(202,15,15,0);
+    }
+    ul.headerLinkLists > li.menuLists > a:hover {
+        border-color: white;
+    }
+    ul.headerLinkLists > li > a#ME {
         display: block;
     }
 
@@ -105,7 +193,7 @@ ul#headerLinkLists > li > a#ME > div{
         overflow: hidden;
     }
     .viewMenu{
-        height: 50px;
+        height: 46px;
         overflow: visible;
     }
 }

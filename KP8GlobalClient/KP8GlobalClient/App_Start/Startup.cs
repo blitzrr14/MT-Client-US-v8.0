@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using System;
 using Owin;
 
 namespace KP8GlobalClient.App_Start
@@ -14,7 +15,8 @@ namespace KP8GlobalClient.App_Start
                 AuthenticationType = "KP8GC",
                 LoginPath = new PathString("/"),
                 CookieName = "KP8GC",
-                LogoutPath = new PathString("/")
+                LogoutPath = new PathString("/"),
+                ExpireTimeSpan = TimeSpan.FromMinutes(10),
             });
 
             // Enable the application to use a cookie to store information for the signed in user

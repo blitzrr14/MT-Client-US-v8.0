@@ -34,6 +34,11 @@ function msgBox(msg) {
     document.getElementById('msgContainer').innerHTML = msg;
 }
 
+function msgSessionExpired() {
+    $('#sessionExpiredModal').removeClass('hidden');
+    document.getElementById('msgContainer').innerHTML = "Current session has already expired due to long inactivity, Please kindly login again <br /> <br /> Thank you...";
+}
+
 function hideModals() {
     ajaxLoadModal('Loading...');
     ajaxLoadModal();

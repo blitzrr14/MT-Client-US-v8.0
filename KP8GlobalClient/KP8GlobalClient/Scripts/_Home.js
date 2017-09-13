@@ -1,5 +1,5 @@
 ﻿function getHeaderLinks() {
-    ajaxLoadModal("Signed in");
+    ajaxLoadModal("Rendering tools");
     $.ajax({
         async: true,
         type: 'GET',
@@ -8,7 +8,6 @@
         dataType: 'html',
         cache: false,
         success: function (result) {
-            ajaxLoadModal("Rendering tools");
             $('header').html(result);
         },
         error: function (jqXHR, textStatus, errorThrown) {
