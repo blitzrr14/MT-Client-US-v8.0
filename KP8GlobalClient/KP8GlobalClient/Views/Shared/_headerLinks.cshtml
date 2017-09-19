@@ -8,14 +8,14 @@
                     <div class="bar3"></div>
                 </a>
             </li>
-            <li class="menuLists moveUp">
-                <a id="SO">Sendout</a>
+            <li id="SO" class="menuLists moveUp">
+                <a>Sendout</a>
                 <ul id="SOLists" class="subLinkLists">
                     <li>
                         <a>Pre-Payment Disclosure</a>
                     </li>
                     <li>
-                        <a>Sendout Transaction</a>
+                        <a id="SOTrans">Sendout Transaction</a>
                     </li>
                     <li>
                         <a>Sendout Cancellation</a>
@@ -28,11 +28,65 @@
                     </li>
                 </ul>
             </li>
-            <li class="menuLists moveUp"><a id="PO">Payout</a></li>
-            <li class="menuLists moveUp"><a id="RE">Reports</a></li>
-            <li class="menuLists moveUp"><a id="KG">KP2Go</a></li>
-            <li class="menuLists moveUp"><a id="BP">Bills Payment</a></li>
-            <li class="menuLists moveUp"><a id="SY">System</a></li>
+            <li id="PO" class="menuLists moveUp">
+                <a>Payout</a>
+                <ul id="POLists" class="subLinkLists">
+                    <li>
+                        <a>Payout Transaction</a>
+                    </li>
+                    <li>
+                        <a>Payout Cancellation</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="RE" class="menuLists moveUp">
+                <a>Reports</a>
+                <ul id="RELists" class="subLinkLists">
+                    <li>
+                        <a>Reprinting</a>
+                    </li>
+                    <li>
+                        <a>Branch Web Report</a>
+                    </li>
+                </ul>
+            </li>
+            @*<li class="menuLists moveUp"><a id="KG">KP2Go</a></li>*@
+            <li id="BP" class="menuLists moveUp">
+                <a>Bills Payment</a>
+                <ul id="BPLists" class="subLinkLists">
+                    <li>
+                        <a>Sendout</a>
+                    </li>
+                    <li>
+                        <a>Sendout Cancellation</a>
+                    </li>
+                    <li>
+                        <a>Reprint</a>
+                    </li>
+                    <li>
+                        <a>Bills Payment Web Report</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="SY" class="menuLists moveUp">
+                <a>System</a>
+                <ul id="SYLists" class="subLinkLists">
+                    <li>
+                        <a>Change Password</a>
+                    </li>
+                    <li id="SYCon">
+                        <a>Connection</a>
+                        <ul id="SYConLists" class="subLinkLists subOfSubLink">
+                            <li>
+                                <a>Network</a>
+                            </li>
+                            <li>
+                                <a>Cloud</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
@@ -96,48 +150,95 @@
                 }, 500);
             }, 500);
 
+            $('li#SO').hover(
+                function () {
+                    $('#SOLists > li').attr('style', 'height: 50px');
+                },
+                function () {
+                    $('#SOLists > li').attr('style', 'height: 0px');
+                }
+            );
+            $('li#PO').hover(
+                function () {
+                    $('#POLists > li').attr('style', 'height: 50px');
+                },
+                function () {
+                    $('#POLists > li').attr('style', 'height: 0px');
+                }
+            );
+            $('li#RE').hover(
+                function () {
+                    $('#RELists > li').attr('style', 'height: 50px');
+                },
+                function () {
+                    $('#RELists > li').attr('style', 'height: 0px');
+                }
+            );
+            $('li#BP').hover(
+                function () {
+                    $('#BPLists > li').attr('style', 'height: 50px');
+                },
+                function () {
+                    $('#BPLists > li').attr('style', 'height: 0px');
+                }
+            );
+            $('li#SY').hover(
+                function () {
+                    $('#SYLists > li').attr('style', 'height: 50px');
+                },
+                function () {
+                    $('#SYLists > li').attr('style', 'height: 0px');
+                }
+            );
+            $('li#SYCon').hover(
+                function () {
+                    $('#SYConLists > li').attr('style', 'height: 50px');
+                },
+                function () {
+                    $('#SYConLists > li').attr('style', 'height: 0px');
+                }
+            );
+
             var sendoutIsClicked = false;
-            $('a#SO').click(function () {
+            $('a#SOTrans').click(function () {
                 ajaxLoadModal("Rendering Tool");
                 toggLeMenuOff($('a#ME'));
 
-                //if (sendoutIsClicked) {
-                //    sendoutIsClicked = false;
-                //    $('div#content-holder').html("");
-                //    ajaxLoadModal();
-                //}
-                //else {
-                //    $.ajax({
-                //        async: true,
-                //        type: 'GET',
-                //        url: '/Sendout/Index',
-                //        contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-                //        dataType: 'html',
-                //        cache: false,
-                //        success: function (result) {
-                //            if (result == "") {
-                //                msgSessionExpired();
-                //            }
-                //            else {
-                //                $('div#content-holder').html(result);
-                //                sendoutIsClicked = true;
-                //                setTimeout(function () {
-                //                    ajaxLoadModal();
-                //                }, 500)
-                //            }
-                //        },
-                //        error: function (jqXHR, textStatus, errorThrown) {
-                //            unExpectedError();
-                //        }
-                //    });
-                //}
+                if (sendoutIsClicked) {
+                    sendoutIsClicked = false;
+                    $('div#content-holder').html("");
+                    ajaxLoadModal();
+                }
+                else {
+                    $.ajax({
+                        async: true,
+                        type: 'GET',
+                        url: '/Sendout/Index',
+                        contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                        dataType: 'html',
+                        cache: false,
+                        success: function (result) {
+                            if (result == "") {
+                                msgSessionExpired();
+                            }
+                            else {
+                                $('div#content-holder').html(result);
+                                sendoutIsClicked = true;
+                                setTimeout(function () {
+                                    ajaxLoadModal();
+                                }, 500)
+                            }
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            unExpectedError();
+                        }
+                    });
+                }
             });
 
             window.addEventListener('resize', function () {
                 toggLeMenuOff($('a#ME'));
             });
-
-            //$('header').hover(function () { }, function () { toggLeMenuOff($('a#ME')) })
 
             $('#headerLinkLists').focusout(function () {
                 toggLeMenuOff($('a#ME'));
