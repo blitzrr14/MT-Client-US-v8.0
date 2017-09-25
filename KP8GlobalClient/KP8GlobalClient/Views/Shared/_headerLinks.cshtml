@@ -10,27 +10,27 @@
             </li>
             <li id="SO" class="menuLists moveUp">
                 <a>Sendout</a>
-                <ul id="SOLists" class="subLinkLists">
+                <ul class="subLinkLists">
                     <li>
-                        <a>Pre-Payment Disclosure</a>
+                        <a id="PPayDis">Pre-Payment Disclosure</a>
                     </li>
                     <li>
                         <a id="SOTrans">Sendout Transaction</a>
                     </li>
                     <li>
-                        <a>Sendout Cancellation</a>
+                        <a id="SOCancl">Sendout Cancellation</a>
                     </li>
                     <li>
-                        <a>Direct to Bank</a>
+                        <a id="Dir2Bnk">Direct to Bank</a>
                     </li>
                     <li>
-                        <a>Direct to Bank Cancellation</a>
+                        <a id="D2BCanc">Direct to Bank Cancellation</a>
                     </li>
                 </ul>
             </li>
             <li id="PO" class="menuLists moveUp">
                 <a>Payout</a>
-                <ul id="POLists" class="subLinkLists">
+                <ul class="subLinkLists">
                     <li>
                         <a>Payout Transaction</a>
                     </li>
@@ -41,7 +41,7 @@
             </li>
             <li id="RE" class="menuLists moveUp">
                 <a>Reports</a>
-                <ul id="RELists" class="subLinkLists">
+                <ul class="subLinkLists">
                     <li>
                         <a>Reprinting</a>
                     </li>
@@ -53,7 +53,7 @@
             @*<li class="menuLists moveUp"><a id="KG">KP2Go</a></li>*@
             <li id="BP" class="menuLists moveUp">
                 <a>Bills Payment</a>
-                <ul id="BPLists" class="subLinkLists">
+                <ul class="subLinkLists">
                     <li>
                         <a>Sendout</a>
                     </li>
@@ -70,13 +70,13 @@
             </li>
             <li id="SY" class="menuLists moveUp">
                 <a>System</a>
-                <ul id="SYLists" class="subLinkLists">
+                <ul class="subLinkLists">
                     <li>
                         <a>Change Password</a>
                     </li>
                     <li id="SYCon">
                         <a>Connection</a>
-                        <ul id="SYConLists" class="subLinkLists subOfSubLink">
+                        <ul class="subLinkLists subOfSubLink">
                             <li>
                                 <a>Network</a>
                             </li>
@@ -141,7 +141,8 @@
 <script>
     $(function () {
         var currUser = "@Session["User"]";
-        if (currUser != "") {
+        if (currUser != "")
+        {
             setTimeout(function () {
                 $(".headerMenu").removeClass('headerHide');
                 $(".headerMenu").addClass('headerShow');
@@ -150,52 +151,29 @@
                 }, 500);
             }, 500);
 
-            $('li#SO').hover(
+            window.addEventListener('resize', function () {
+                toggLeMenuOff($('a#ME'));
+            });
+
+            $('#headerLinkLists').focusout(function () {
+                toggLeMenuOff($('a#ME'));
+            });
+
+            $('ul#headerLinkLists > li').hover(
                 function () {
-                    $('#SOLists > li').attr('style', 'height: 50px');
+                    $('li#' + this.id + ' > ul > li').attr('style', 'height: 46px');
                 },
                 function () {
-                    $('#SOLists > li').attr('style', 'height: 0px');
+                    $('li#' + this.id + ' > ul > li').attr('style', 'height: 0px');
                 }
             );
-            $('li#PO').hover(
+
+            $('ul#headerLinkLists > li > ul > li').hover(
                 function () {
-                    $('#POLists > li').attr('style', 'height: 50px');
+                    $('li#' + this.id + ' > ul > li').attr('style', 'height: 46px');
                 },
                 function () {
-                    $('#POLists > li').attr('style', 'height: 0px');
-                }
-            );
-            $('li#RE').hover(
-                function () {
-                    $('#RELists > li').attr('style', 'height: 50px');
-                },
-                function () {
-                    $('#RELists > li').attr('style', 'height: 0px');
-                }
-            );
-            $('li#BP').hover(
-                function () {
-                    $('#BPLists > li').attr('style', 'height: 50px');
-                },
-                function () {
-                    $('#BPLists > li').attr('style', 'height: 0px');
-                }
-            );
-            $('li#SY').hover(
-                function () {
-                    $('#SYLists > li').attr('style', 'height: 50px');
-                },
-                function () {
-                    $('#SYLists > li').attr('style', 'height: 0px');
-                }
-            );
-            $('li#SYCon').hover(
-                function () {
-                    $('#SYConLists > li').attr('style', 'height: 50px');
-                },
-                function () {
-                    $('#SYConLists > li').attr('style', 'height: 0px');
+                    $('li#' + this.id + ' > ul > li').attr('style', 'height: 0px');
                 }
             );
 
@@ -203,6 +181,7 @@
             $('a#SOTrans').click(function () {
                 ajaxLoadModal("Rendering Tool");
                 toggLeMenuOff($('a#ME'));
+                $('li#' + this.parentNode.parentNode.parentNode.id + ' > ul > li').removeAttr('style');
 
                 if (sendoutIsClicked) {
                     sendoutIsClicked = false;
@@ -236,14 +215,6 @@
                 }
             });
 
-            window.addEventListener('resize', function () {
-                toggLeMenuOff($('a#ME'));
-            });
-
-            $('#headerLinkLists').focusout(function () {
-                toggLeMenuOff($('a#ME'));
-            });
-
             $('a#USERmenu').click(function () {
                 if ($('div#userInformation').hasClass('headerUserInfoHide')) {
                     //document.getElementById('USERmenu').innerHTML = '<img class="diamond horizontal-flipOn" src="../Image/_MLAjaxLoad.svg" draggable="false" style="width: 30px; position: absolute; left:0;"/>';
@@ -265,7 +236,7 @@
             });
         }
         else {
-            location.href ='/Index/LogOut?Length=0';
+            location.href ='/Index/Logout';
         }
     })
 
