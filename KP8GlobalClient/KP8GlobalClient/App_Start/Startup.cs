@@ -16,7 +16,7 @@ namespace KP8GlobalClient.App_Start
                 LoginPath = new PathString("/"),
                 CookieName = "KP8GC",
                 LogoutPath = new PathString("/"),
-                ExpireTimeSpan = TimeSpan.FromMinutes(10),
+                ExpireTimeSpan = TimeSpan.FromMinutes(10)
             });
 
             // Enable the application to use a cookie to store information for the signed in user
